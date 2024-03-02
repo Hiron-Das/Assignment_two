@@ -191,7 +191,6 @@ form>input {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 1.5rem;
-    column-gap: 0.5rem;
 }
 
 .destination-grid-img img {
@@ -217,8 +216,81 @@ form>input {
     gap: 1.5rem;
 }
 
+/* why choose us section styles */
+.choose-container h3,
+p {
+    text-align: center;
+}
+
+.choose-container h3 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+}
+
+.choose-container>p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.choose-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.choose-container-cards img {
+    width: 50px;
+}
+
+.card-one {
+    width: 45%;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 1rem;
+}
+
+.card-two {
+    width: 45%;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 1rem;
+}
+
+.card-three {
+    width: 45%;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.choose-container .card-title {
+    color: #131318;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.card-p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
 /* Responsive for mobile device */
 @media screen and (max-width:600px) {
+    body {
+        max-width: 90%;
+    }
+
     .nav-container {
         flex-direction: column;
         gap: 1.4rem;
@@ -251,5 +323,16 @@ form>input {
 
     .destination-grid-img .destination-img-3 {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .choose-container-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-one,
+    .card-two,
+    .card-three {
+        width: 100%;
     }
 }
