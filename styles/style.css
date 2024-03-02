@@ -359,6 +359,58 @@ form>input {
     text-align: center;
 }
 
+/* Bonus section styles */
+.bonus-container {
+    margin-bottom: 3rem;
+}
+
+.bonus-container>h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+
+.bonus-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.cards {
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 5px 5px 20px 0px #89898e80;
+    padding: 2rem;
+}
+
+.cards p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5A5A5D;
+}
+
+.clients {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.clients h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #131318;
+}
+
+.clients img {
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    border: 3px solid rgba(32, 230, 32, 0.826);
+}
+
 /* footer styles */
 footer {
     width: 100%;
@@ -503,6 +555,10 @@ footer {
     .card-two,
     .card-three {
         width: 90%;
+    }
+
+    .bonus-card {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .newsletter-container {
