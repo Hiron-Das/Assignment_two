@@ -217,12 +217,12 @@ form>input {
 }
 
 /* why choose us section styles */
-.choose-container h3,
-p {
-    text-align: center;
+.choose-container {
+    margin-bottom: 4rem;
 }
 
 .choose-container h3 {
+    text-align: center;
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
@@ -230,6 +230,7 @@ p {
 }
 
 .choose-container>p {
+    text-align: center;
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
     font-weight: 400;
@@ -285,6 +286,77 @@ p {
     text-align: left;
 }
 
+
+/* newsletter section styles */
+.newsletter-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.newsletter-content {
+    border: 1px solid #FF5400;
+    border-radius: 1rem;
+    padding: 2.8rem;
+}
+
+.newsletter-content h4 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.newsletter-content hr {
+    opacity: 2px;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 2rem auto;
+}
+
+.newsletter-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-content form input {
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter-img {
+    width: 50%;
+    position: relative;
+}
+
+.newsletter-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-img .img-over {
+    position: absolute;
+    bottom: 52px;
+    right: 5px;
+    transform: rotate(-26deg);
+    padding: 1rem;
+}
+
+.newsletter-img p:first-child {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+}
+
+.newsletter-img p:last-child {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #FFF;
+    text-align: center;
+}
+
+
+
 /* Responsive for mobile device */
 @media screen and (max-width:600px) {
     body {
@@ -333,6 +405,14 @@ p {
     .card-one,
     .card-two,
     .card-three {
+        width: 100%;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+    }
+
+    .newsletter-container .newsletter-img {
         width: 100%;
     }
 }
